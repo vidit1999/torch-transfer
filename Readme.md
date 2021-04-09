@@ -6,6 +6,8 @@
 ### **About Data**
 `CIFAR100` dataset is used here. This dataset contains 60,000 images of 100 different classes of objects with corresponding labels, where 50,000 images are for training and 10,000 are for testing. Here, 50,000 training images are splied into 45,000 actual training images and 5,000 validation images.
 
+<hr>
+
 ### **Data Pre-processing**
 Images have been resized to `(224 x 224)` for Transfer Learning Network. Images have been normalized using `torchvision.transforms.Normalize` with different mean and std for Normal CNN Network input and Transfer Learning Network input.
 ```py
@@ -15,7 +17,7 @@ mean = [0.5071, 0.4867, 0.4408], std = [0.2675, 0.2565, 0.2761]
 # For Transfer Learning Network
 mean = [0.485, 0.456, 0.406], std = [0.229, 0.224, 0.225]
 ```
-
+<hr>
 
 ### **CNN Network**
 Input shape of manually built CNN network is `[batch_size, 3, 32, 32]` and output shape is `[batch_size, 100]`.
@@ -126,6 +128,8 @@ This model took **843.69s seconds** to train for **10 epochs**. After training i
 Here is it's Loss-Accuracy Plots,
 
 ![ResNet Pretrained Loss-Accuracy Plot](resnet_pretrained_loss_acc.png)
+
+<hr>
 
 ### **Observations**
 
