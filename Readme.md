@@ -64,14 +64,14 @@ Estimated Total Size (MB): 169.79
 ----------------------------------------------------------------
 ```
 
-This model took **104.55s seconds** to train for **10 epochs**. After training it has achived,
+This model took **89.83s seconds** to train for **10 epochs**. After training it has achived,
 
 
 **----**|**Loss**|**Accuracy**
 :-----:|:-----:|:-----:
-**Train**| 2.0016| 0.4813
-**Validation**| 2.5209| 0.3547
-**Test**| 2.5139| 0.3610
+**Train**| 2.0009| 0.4813
+**Validation**| 2.5038| 0.3629
+**Test**| 2.5027| 0.3611
 
 <br>
 
@@ -115,13 +115,13 @@ Params size (MB): 43.23
 Estimated Total Size (MB): 12717.61
 ---------------------------------------------
 ```
-This model took **843.69s seconds** to train for **10 epochs**. After training it has achived,
+This model took **745.74s seconds** to train for **10 epochs**. After training it has achived,
     
 **----**|**Loss**|**Accuracy**
 :-----:|:-----:|:-----:
-**Train**| 2.1419| 0.4744
-**Validation**| 2.1292| 0.4733
-**Test**| 2.1267| 0.4735
+**Train**| 2.1418| 0.4744
+**Validation**| 2.1291| 0.4737
+**Test**| 2.1266| 0.4734
 
 <br>
 
@@ -135,13 +135,13 @@ Here is it's Loss-Accuracy Plots,
 
 * Validation and tesing accuracies of Transfer Learning Network is more than Normal CNN Network.
 * Transfer Learning Network took more time to train than Normal CNN Network for same number of epochs.
-* After letting a Normal CNN Network train for achieving maximum Transfer Learning Network validation accuracy (which is `0.4733` in this case), it has stopped after `18` epochs, as there was no validation accuracy improvement for `5` consecutive epochs. It has achieved best validation accuracy of `0.3743` which is still less than Transfer Learning Network's best validation accuracy. Here is it's Loss-Accuracy table and plots,
+* After letting a Normal CNN Network train to achieve maximum Transfer Learning Network validation accuracy (which is `0.4737` in this case), it has stopped after `17` epochs, as there was no validation accuracy improvement for `5` consecutive epochs. It has achieved best validation accuracy of `0.3629` which is still less than Transfer Learning Network's best validation accuracy. Here is it's Loss-Accuracy table and plots,
 
     **----**|**Loss**|**Accuracy**
     :-----:|:-----:|:-----:
-    **Train**| 0.9899| 0.7551
-    **Validation**| 2.6589| 0.3665
-    **Test**| 2.1267| 0.4735
+    **Train**| 1.001| 0.7227
+    **Validation**| 2.6721| 0.3629
+    **Test**| 2.6038| 0.3712
 
 
     ![Second CNN Loss-Accuracy Plot](_normal_cnn_loss_acc.png)
